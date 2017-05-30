@@ -47,6 +47,7 @@ dependencies {
     compile 'com.google.firebase:firebase-messaging:10.2.6'
     compile 'com.balysv:material-ripple:1.0.2'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile project(':linkedin-sdk')
 }
 
 apply plugin: 'com.google.gms.google-services'
