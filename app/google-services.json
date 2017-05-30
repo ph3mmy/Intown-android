@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "985651920662",
+    "firebase_url": "https://intownexec-2fe7f.firebaseio.com",
+    "project_id": "intownexec-2fe7f",
+    "storage_bucket": "intownexec-2fe7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985651920662:android:667e9bf14ec8c5ce",
+        "android_client_info": {
+          "package_name": "com.intownexec.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985651920662-e15ns7edjv2ndrfpbv6h7u1pp5ok31mp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intownexec.chat",
+            "certificate_hash": "8ff7d9a24ea6fc628f58977af795bcfb2c7be9fd"
+          }
+        },
+        {
+          "client_id": "985651920662-g0eqc12kog6f7r6k36pc9bmqrijsind9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Z1dqjXzS8t4eOz5NOok6Rnv3QdsMdC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985651920662-g0eqc12kog6f7r6k36pc9bmqrijsind9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

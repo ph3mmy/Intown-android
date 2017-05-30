@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackTint">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvSignUpLogoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intownexec.com"
+                    android:textAllCaps="true"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:textColor="@color/gray_bg"/>
+                <TextView
+                    android:id="@+id/tvSignUpLogoSubText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Right place to mix businesss with pleasure"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/gray_border"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/signupBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/gray_bg"
+                    android:textAllCaps="true"
+                    android:background="@drawable/transparent_button"
+                    android:text="@string/action_signup"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="4">
+
+                    <Button
+                        android:id="@+id/gPlusSignupBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:textColor="@color/gray_bg"
+                        android:layout_marginEnd="5dp"
+                        android:textAllCaps="true"
+                        android:background="@drawable/transparent_button"
+                        android:text="googlePlus"
+                        android:layout_marginRight="5dp" />
+
+                    <Button
+                        android:id="@+id/linkedInSignupBtn"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/gray_bg"
+                        android:textAllCaps="true"
+                        android:background="@drawable/transparent_button"
+                        android:text="LinkedIn"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/card_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Have an account?"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/text_size_small"/>
+                    <TextView
+                        android:id="@+id/tvSignUpNewSignIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/common_signin_button_text"
+                        android:textColor="@color/gray_bg"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_size_small"
+                        android:layout_marginLeft="5dp" />
+                </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
