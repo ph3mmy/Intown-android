@@ -24,8 +24,6 @@ import com.linkedin.platform.utils.Scope;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import static android.R.attr.progress;
-
 /**
  * Created by OLUWAPHEMMY on 5/23/2017.
  */
@@ -37,7 +35,17 @@ public class NewAppActivity extends AppCompatActivity implements View.OnClickLis
     Button normalSignInButton, linkedInButton;
 
     String url = "https://api.linkedin.com/v1/people/~:"
-            +"(email-address,formatted-name,phone-numbers,public-profile-url,picture-url,picture-urls::(original))";
+            +"(email-address,formatted-name,phone-numbers,public-profile-url," +
+            "industry,positions:(id,title,summary,start-date,end-date," +
+            "is-current,company:(id,name,type,size,industry,ticker))," +
+            "picture-url,picture-urls::(original))"
+            ;
+
+    String newUrl = "https://api.linkedin.com/v1/people-search:(people:(id,first-name,last-name," +
+            "headline,picture-url,industry,positions:(id,title,summary,start-date,end-date," +
+            "is-current,company:(id,name,type,size,industry,ticker))," +
+            "educations:(id,school-name,field-of-study,start-date,end-date,degree,activities,notes))" +
+            ",num-results)?first-name=parameter&last-name=parameter";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,7 +80,7 @@ public class NewAppActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(this, NewSignupActivity.class));
                 break;
             case R.id.linkedInSignupBtn:
-                loginLinkedin();
+                loginLinkedIn();
 
                 break;
             default:
@@ -80,7 +88,7 @@ public class NewAppActivity extends AppCompatActivity implements View.OnClickLis
         }
     }
 
-    public void loginLinkedin(){
+    public void loginLinkedIn(){
             LISessionManager.getInstance(getApplicationContext()).init(this, buildScope(),new AuthListener() {
         @Override
         public void onAuthSuccess() {
@@ -123,9 +131,20 @@ public class NewAppActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     public void setUserProfile(JSONObject response) {
+        /**{"emailAddress":"afolayanseyi@gmail.com","formattedName":"Jephthah O. Afolayan, CPMP",
+                "industry":"Computer Software",
+                "pictureUrl":"https:\/\/media.licdn.com\/mpr\/mprx\/0_GlrRkytf5psV0ZadbbkRos_f5xRFMsSWiPHRGenah2RQpEPkIlQR2sUfCogFJZ8WmhQUfy47egE6VOYkHGzFueJ_DgEbVYcewGz4bW2m6yxIre2qFP_nFjGxSHKBPY8MGTlchUx-L9f",
+                "pictureUrls":{"_total":1,
+                "values":["https:\/\/media.licdn.com\/mpr\/mprx\/0_xTXgrCZ_bw2LOh3Y2gJOAcqhbouWwC8YYiJUhpWivbudVmS4oX4O3cd6cqyowhhROe4Oike6kmhdWPmgwov-FMH51mhWWPyU2ovxtCqLQNl8WXD-2m5YZgV9aq"]},
+            "positions":{"_total":0},
+            "publicProfileUrl":"https:\/\/www.linkedin.com\/in\/afolayanseyi"}
+         **/
         try {
+            Log.e(TAG, "setUserProfile: response == "+response.toString());
+            String name = response.get("formattedName").toString();
             String email = response.get("emailAddress").toString();
-            Log.e(TAG, "setUserProfile: "+ email );
+            String profilePicUrl = response.get("pictureUrl").toString();
+            Log.e(TAG, "setUserProfile: email: "+ email +" name:" +name);
         } catch (JSONException e) {
             e.printStackTrace();
         }
