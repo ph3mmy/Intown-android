@@ -56,4 +56,14 @@
     <style name="MyRippleStyleDark" parent="MyRippleStyleLight">
         <item name="mrl_rippleColor">#9096889A</item>
     </style>
+
+    <style name="CustomNavDrawer" parent="ThemeOverlay.AppCompat.Light">
+        <!--<item name="android:background">@color/black</item>
+        <item name="android:itemBackground">@color/sim_grey</item>-->
+        <item name="android:textColor">@color/state_list</item>
+        <item name="android:textColorSecondary">@color/sim_grey_header</item>
+
+        <!--android:background="@color/black"
+        app:itemTextColor="@color/sim_grey"-->
+    </style>
 </resources>

@@ -298,7 +298,8 @@
     <string name="page_7">Profile Likes</string>
     <string name="page_8">I Liked</string>
     <string name="page_9">Upgrades</string>
-    <string name="page_10">People Nearby</string>
+    <string name="page_10">People</string>
+    <!--<string name="page_10">People Nearby</string>-->
     <string name="page_11">Search</string>
     <string name="page_12">Settings</string>
 
@@ -440,7 +441,7 @@
     <string name="title_activity_gifts">Profile Gifts</string>
     <string name="title_activity_friends">Profile Friends</string>
     <string name="title_activity_balance">Buy Credits</string>
-    <string name="title_activity_nearby">People Nearby</string>
+    <string name="title_activity_nearby">People</string>
 
     <!-- for version 1.1 -->
 
@@ -588,5 +589,9 @@
     <string name="prompt_username">Username</string>
     <string name="register">Register</string>
     <string name="prompt_full_name">Full Name</string>
+    <string name="title_activity_main_new">People</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
 </resources>

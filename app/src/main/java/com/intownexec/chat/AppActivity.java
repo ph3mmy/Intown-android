@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.intownexec.chat.activity.MainActivityNew;
 import com.intownexec.chat.app.App;
 import com.intownexec.chat.common.ActivityBase;
 import com.intownexec.chat.util.CustomRequest;
@@ -85,7 +86,7 @@ public class AppActivity extends ActivityBase {
 
                                     App.getInstance().updateGeoLocation();
 
-                                    Intent intent = new Intent(AppActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(AppActivity.this, MainActivityNew.class);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(intent);
 

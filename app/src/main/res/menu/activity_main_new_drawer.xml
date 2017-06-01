@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single" android:title="Favourites" >-->
+    <item android:checkableBehavior="single" android:title="Favourites" >
+        <menu>
+        <!--<item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />-->
+        <item
+            android:id="@+id/nav_people"
+            android:title="PEOPLE NEARBY" />
+        <item
+            android:id="@+id/nav_exec"
+            android:title="EXEC LIVE (NEW)" />
+        <item
+            android:id="@+id/nav_business"
+            android:title="BUSINESS PITCH" />
+        <item
+            android:id="@+id/nav_messages"
+            android:title="MESSAGES" />
+
+        <item
+            android:id="@+id/nav_matches"
+            android:title="MATCHES" />
+        <item
+            android:id="@+id/nav_connection"
+            android:title="CONNECTIONS" />
+
+        <item
+            android:id="@+id/nav_visitors"
+            android:title="PROFILE VISITORS" />
+        </menu>
+    </item>
+
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="SETTINGS" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="LOGOUT" />
+        </menu>
+    </item>
+
+</menu>
