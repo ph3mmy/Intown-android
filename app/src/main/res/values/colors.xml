@@ -58,6 +58,7 @@
     <color name="green">#1ebe1b</color>
     <color name="colorPrimaryButtonDisabled">#e6878787</color>
     <color name="blackTint">#99000000</color>
+    <color name="sim_grey">#e5e5e5</color>
 
     <color name="sim_grey">#E5E5E5</color>
     <color name="sim_grey_header">#303030</color>

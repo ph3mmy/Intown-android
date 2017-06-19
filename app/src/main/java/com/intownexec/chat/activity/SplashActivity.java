@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.intownexec.chat.NewAppActivity;
-
 /**
  * Created by OLUWAPHEMMY on 2/12/2017.
  */
@@ -25,7 +23,8 @@ public class SplashActivity extends AppCompatActivity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Intent intent = new Intent(this, NewAppActivity.class);
+//        Intent intent = new Intent(this, NewAppActivity.class);
+        Intent intent = new Intent(this, ProfileSetupActivity.class);
         startActivity(intent);
         finish();
     }

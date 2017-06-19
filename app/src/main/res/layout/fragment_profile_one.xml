@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am a: "
+            android:textAllCaps="true"
+            android:textColor="@color/sim_grey"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/transparent_button">
+        
+        <Spinner
+            android:id="@+id/spinnerProfileOneIAm"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here for:"
+            android:textAllCaps="true"
+            android:textColor="@color/sim_grey"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <CheckBox
+                android:id="@+id/chkboxEntertainment"
+                android:layout_width="wrap_content"
+                android:textColor="@color/sim_grey"
+                android:layout_height="wrap_content"
+                android:text="Entertainment"/>
+
+            <CheckBox
+                android:id="@+id/chkboxMeetPro"
+                android:layout_width="wrap_content"
+                android:textColor="@color/sim_grey"
+                android:layout_height="wrap_content"
+                android:text="Meet Professionals"/>
+
+
+            <CheckBox
+                android:id="@+id/chkboxNetworking"
+                android:layout_width="wrap_content"
+                android:textColor="@color/sim_grey"
+                android:layout_height="wrap_content"
+                android:text="Networking"/>
+
+            <CheckBox
+                android:id="@+id/chkboxBusinessOpp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/sim_grey"
+                android:layout_height="wrap_content"
+                android:text="Business Opportunities"/>
+            
+        </LinearLayout>
+
+        
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To connect with: "
+            android:textColor="@color/sim_grey"
+            android:textAllCaps="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/transparent_button">
+
+            <Spinner
+                android:id="@+id/spinnerProfileOneConnectWith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sim_grey"
+            android:text="That are: "
+            android:textAllCaps="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/transparent_button">
+
+            <Spinner
+                android:id="@+id/spinnerProfileOneThatAre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:theme="@style/Widget.AppCompat.DropDownItem.Spinner"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btProfileSetupOne"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/transparent_button"
+        android:text="Next"
+        android:textColor="@color/sim_grey"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
