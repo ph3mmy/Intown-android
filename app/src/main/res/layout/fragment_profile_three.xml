@@ -1,6 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:orientation="vertical">
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="40dp"
+    card_view:cardCornerRadius="6dp"
+    card_view:elevation="4dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sim_grey_header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/sim_grey_spinner">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Add Photo"
+                android:textColor="@color/sim_grey"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@color/sim_grey_spinner"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/addFirstProImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_add_a_photo_camera"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/prevAndRemLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/addFirstProImagePreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/addFirstProImageRemove"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/blackTint"
+                        android:backgroundTintMode="src_over"
+                        android:padding="5dp"
+                        android:src="@drawable/remove" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <!--
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/sim_grey_header"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/addSecProImageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_add_a_photo_camera"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp" />
+
+                    <ImageView
+                        android:id="@+id/addSecProImgPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/addSecProRemove"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTintMode="src_atop"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:src="@drawable/remove"/>
+
+                </RelativeLayout>-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/sim_grey_spinner"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="A short Note about me"
+                android:textColor="@color/sim_grey"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent" />
+
+            <EditText
+                android:id="@+id/etProThreeAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/sim_grey"
+                android:background="@drawable/transparent_button"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="top"
+                android:hint="About me"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/gray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSaveProThree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/transparent_button"
+            android:text="Save"
+            android:textColor="@color/sim_grey" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+        </ScrollView>
+    </LinearLayout>

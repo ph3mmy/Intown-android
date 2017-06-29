@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:elevation="15dp"
     android:minHeight="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
     local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"

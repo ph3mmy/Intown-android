@@ -2,10 +2,17 @@ package com.intownexec.chat.util;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.Context;
+import android.graphics.Typeface;
+import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.intownexec.chat.R;
 
@@ -605,6 +612,36 @@ public class Helper extends Application {
         }
 
         return  true;
+    }
+
+
+    public static ArrayAdapter<String> generateAdapter(final Context context, String[] array){
+        //takeoff preferred time
+        ArrayAdapter<String> prefAdapter = new ArrayAdapter<String>( context,
+                R.layout.spinner_item, array)
+        {
+
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View v = super.getView(position, convertView, parent);
+
+                Typeface externalFont=Typeface.createFromAsset( context.getAssets(), "fonts/proxima-nova-cond-regular.ttf");
+                ((TextView) v).setTypeface(externalFont);
+
+                return v;
+            }
+
+
+            public View getDropDownView(int position, View convertView, @NonNull ViewGroup parent) {
+                View v =super.getDropDownView(position, convertView, parent);
+
+                Typeface externalFont= Typeface.createFromAsset( context.getAssets(), "fonts/proxima-nova-cond-regular.ttf");
+                ((TextView) v).setTypeface(externalFont);
+
+                return v;
+            }
+        };
+        prefAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        return  prefAdapter;
     }
 
 }

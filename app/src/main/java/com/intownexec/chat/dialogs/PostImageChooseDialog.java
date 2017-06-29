@@ -1,5 +1,6 @@
 package com.intownexec.chat.dialogs;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -28,7 +29,10 @@ public class PostImageChooseDialog extends DialogFragment implements Constants {
      * */
     public void onAttach(android.app.Activity activity) {
 
-        super.onAttach(activity);
+//        Activity activity = getActivity();
+        if (isAdded() && activity != null) {
+            super.onAttach(activity);
+        }
 
         try {
 
@@ -63,7 +67,11 @@ public class PostImageChooseDialog extends DialogFragment implements Constants {
 
                     case 0: {
 
-                        alertPositiveListener.onImageFromGallery();
+
+                        Activity activity = getActivity();
+                        if (isAdded() && activity != null) {
+                            alertPositiveListener.onImageFromGallery();
+                        }
 
                         break;
                     }

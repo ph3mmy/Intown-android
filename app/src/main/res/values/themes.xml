@@ -20,4 +20,8 @@
 	    <item name="android:shadowDy">4</item>
 	</style>
 
+	<style name="customSpinnerTheme" parent="Base.Widget.AppCompat.Spinner">
+		<item name="backgroundTint">@color/sim_grey</item>
+	</style>
+
 </resources>

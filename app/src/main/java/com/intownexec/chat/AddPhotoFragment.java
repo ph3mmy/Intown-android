@@ -40,6 +40,10 @@ import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.intownexec.chat.app.App;
+import com.intownexec.chat.constants.Constants;
+import com.intownexec.chat.dialogs.PostImageChooseDialog;
+import com.intownexec.chat.util.CustomRequest;
 import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.MultipartBuilder;
@@ -62,10 +66,6 @@ import github.ankushsachdeva.emojicon.EmojiconEditText;
 import github.ankushsachdeva.emojicon.EmojiconGridView;
 import github.ankushsachdeva.emojicon.EmojiconsPopup;
 import github.ankushsachdeva.emojicon.emoji.Emojicon;
-import com.intownexec.chat.app.App;
-import com.intownexec.chat.constants.Constants;
-import com.intownexec.chat.dialogs.PostImageChooseDialog;
-import com.intownexec.chat.util.CustomRequest;
 
 public class AddPhotoFragment extends Fragment implements Constants {
 

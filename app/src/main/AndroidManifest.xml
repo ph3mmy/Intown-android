@@ -49,12 +49,19 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".AppActivity" >
+        <activity android:name=".activity.ProfileSetupActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            </activity>
+        <activity android:name=".AppActivity" >
+ <!--           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
             </activity>
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

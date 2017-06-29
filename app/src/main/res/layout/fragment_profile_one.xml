@@ -6,12 +6,34 @@
     android:orientation="vertical"
     android:background="@color/black">
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="40dp"
+        card_view:cardCornerRadius="6dp"
+        card_view:elevation="4dp"
+        card_view:cardPreventCornerOverlap="false"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/sim_grey_spinner">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="start"
-        android:padding="10dp"
+        android:padding="5dp"
+        android:weightSum="4"
         android:layout_margin="10dp">
 
         <TextView
@@ -23,20 +45,28 @@
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:textSize="16sp"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/transparent_button">
         
         <Spinner
             android:id="@+id/spinnerProfileOneIAm"
-            android:layout_width="match_parent"
-            android:padding="5dp"
-            android:layout_height="wrap_content"/>
-            </LinearLayout>
+            android:layout_width="0dp"
+            android:padding="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            style="@style/customSpinnerTheme"
+            android:layout_margin="5dp"
+            android:prompt="@string/iam_prompt"
+            android:spinnerMode="dropdown" />
+
+<!--            <Spinner
+                android:id="@+id/spinnerTripType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginTop="5dp"
+                android:prompt="@string/trip_type_prompt"
+                android:spinnerMode="dropdown" />-->
+
+            <!--</LinearLayout>-->
 
     </LinearLayout>
 
@@ -61,19 +91,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="-5dp">
             
             <CheckBox
                 android:id="@+id/chkboxEntertainment"
                 android:layout_width="wrap_content"
                 android:textColor="@color/sim_grey"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
                 android:text="Entertainment"/>
 
             <CheckBox
                 android:id="@+id/chkboxMeetPro"
                 android:layout_width="wrap_content"
                 android:textColor="@color/sim_grey"
+                android:buttonTint="@color/colorAccent"
                 android:layout_height="wrap_content"
                 android:text="Meet Professionals"/>
 
@@ -83,6 +116,7 @@
                 android:layout_width="wrap_content"
                 android:textColor="@color/sim_grey"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/colorAccent"
                 android:text="Networking"/>
 
             <CheckBox
@@ -90,7 +124,8 @@
                 android:layout_width="wrap_content"
                 android:textColor="@color/sim_grey"
                 android:layout_height="wrap_content"
-                android:text="Business Opportunities"/>
+                android:buttonTint="@color/colorAccent"
+                android:text="@string/business_opportunities"/>
             
         </LinearLayout>
 
@@ -102,6 +137,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:weightSum="4"
         android:gravity="start"
         android:padding="10dp"
         android:layout_margin="10dp">
@@ -116,19 +152,16 @@
             android:layout_marginRight="20dp"
             android:textSize="16sp"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/transparent_button">
 
             <Spinner
                 android:id="@+id/spinnerProfileOneConnectWith"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:padding="5dp"
                 android:layout_height="wrap_content"
-                android:padding="5dp"/>
-        </LinearLayout>
+                android:layout_weight="3"
+                android:layout_marginTop="0dp"
+                android:prompt="@string/iam_prompt"
+                android:spinnerMode="dropdown" />
 
     </LinearLayout>
 
@@ -136,6 +169,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:weightSum="4"
         android:gravity="start"
         android:padding="10dp"
         android:layout_margin="10dp">
@@ -150,29 +184,109 @@
             android:layout_marginRight="20dp"
             android:textSize="16sp"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
-            android:background="@drawable/transparent_button">
-
             <Spinner
                 android:id="@+id/spinnerProfileOneThatAre"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:padding="5dp"
                 android:layout_height="wrap_content"
-                app:theme="@style/Widget.AppCompat.DropDownItem.Spinner"/>
-        </LinearLayout>
+                android:layout_weight="3"
+                android:layout_marginTop="0dp"
+                android:prompt="@string/iam_prompt"
+                android:spinnerMode="dropdown" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btProfileSetupOne"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:background="@drawable/transparent_button"
-        android:text="Next"
-        android:textColor="@color/sim_grey"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/spinnerbackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:padding="10dp"
+                        android:layout_margin="10dp">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From these Industries:"
+                                android:textAllCaps="true"
+                                android:textColor="@color/sim_grey"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:textSize="16sp"/>
+
+                            <Button
+                                android:id="@+id/btFromThisInd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="start"
+                            android:padding="0dp"
+                            android:layout_marginTop="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="With Interest in:"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/sim_grey"
+                                    android:layout_marginEnd="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:textSize="16sp"/>
+
+                                <Button
+                                    android:id="@+id/btProSelInt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Select Interest"
+                                    android:layout_marginLeft="10dp" />
+
+                            </LinearLayout>
+
+
+
+                            <Button
+                                android:id="@+id/btProfileSetupTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:background="@drawable/transparent_button"
+                                android:text="Next"
+                                android:textColor="@color/sim_grey"
+                                android:layout_margin="30dp"
+                                android:layout_gravity="center_horizontal"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
 </LinearLayout>

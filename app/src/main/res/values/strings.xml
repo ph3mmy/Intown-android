@@ -49,7 +49,7 @@
     <string name="action_enable">Enable</string>
     <string name="action_accept">Accept</string>
     <string name="action_reject">Reject</string>
-    <string name="action_pending">Pending&#8230;</string>
+    <string name="action_pending">Pending&amp;#8230;</string>
     <string name="action_add_to_friends">Add to friends</string>
     <string name="action_remove_from_friends">Remove from friends</string>
 
@@ -106,14 +106,14 @@
     <string name="placeholder_item_passw">Password</string>
     <string name="placeholder_item_url">Web site</string>
     <string name="placeholder_item_description">Description</string>
-    <string name="placeholder_photo">Comment to photo&#8230;</string>
-    <string name="placeholder_gift">Comment to gift&#8230;</string>
+    <string name="placeholder_photo">Comment to photo&amp;#8230;</string>
+    <string name="placeholder_gift">Comment to gift&amp;#8230;</string>
     <string name="placeholder_search">Search</string>
-    <string name="placeholder_comment">Type a comment&#8230;</string>
-    <string name="placeholder_message">Type a message&#8230;</string>
+    <string name="placeholder_comment">Type a comment&amp;#8230;</string>
+    <string name="placeholder_message">Type a message&amp;#8230;</string>
 
-    <string name="msg_loading">Please wait&#8230;</string>
-    <string name="msg_loading_2">Loading. Please wait&#8230;</string>
+    <string name="msg_loading">Please wait&amp;#8230;</string>
+    <string name="msg_loading_2">Loading. Please wait&amp;#8230;</string>
     <string name="msg_network_error">Please check your Internet connection</string>
     <string name="msg_account_blocked">This account is blocked by a moderator.</string>
     <string name="msg_copied_to_clipboard">Copied to clipboard.</string>
@@ -593,5 +593,121 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="business_opportunities">Business Opportunities</string>
+    <string name="iam_prompt">Who are you ?</string>
+
+
+    <string-array name="industryArray">
+        <item>Accounting</item>
+        <item>Agriculture</item>
+        <item>Airlines/Aviation</item>
+        <item>Alternative Medicine</item>
+        <item>Apparel &amp; Fashion</item>
+        <item>Architecture &amp; Planning</item>
+        <item>Arts and Crafts</item>
+        <item>Automotive</item>
+        <item>Aviation &amp; Aerospace</item>
+        <item>Banking</item>
+        <item>Biotechnology</item>
+        <item>Broadcast Media</item>
+        <item>Civil Engineering</item>
+        <item>Commercial Real Estate</item>
+        <item>Computers &amp; Technology</item>
+        <item>Construction</item>
+        <item>Consumer Goods &amp; Services</item>
+        <item>Defense &amp; Space</item>
+        <item>Design</item>
+        <item>Education</item>
+        <item>Electrical/Electronic Manufacturing</item>
+        <item>Entertainment</item>
+        <item>Environmental Services</item>
+        <item>Events Services</item>
+        <item>Executive Office</item>
+        <item>Financial Services</item>
+        <item>Fine Art</item>
+        <item>Food</item>
+        <item>Glass, Ceramics &amp; Concrete</item>
+        <item>Government</item>
+        <item>Graphic Design</item>
+        <item>Health, Wellness and Fitness</item>
+        <item>Health Care</item>
+        <item>Hospitality</item>
+        <item>Human Resources</item>
+        <item>Import and Export</item>
+        <item>Industrial Automation</item>
+        <item>Information Technology and Services</item>
+        <item>Insurance</item>
+        <item>International</item>
+        <item>Internet</item>
+        <item>Investment Banking</item>
+        <item>Investment Management</item>
+        <item>Judiciary</item>
+        <item>Law</item>
+        <item>Leisure, Travel &amp; Tourism</item>
+        <item>Logistics and Supply Chain</item>
+        <item>Machinery</item>
+        <item>Management Consulting</item>
+        <item>Maritime</item>
+        <item>Marketing and Advertising</item>
+        <item>Market Research</item>
+        <item>Mechanical or Industrial Engineering</item>
+        <item>Media</item>
+        <item>Medical Practice</item>
+        <item>Military</item>
+        <item>Mining &amp; Metals</item>
+        <item>Museums and Institutions</item>
+        <item>Music</item>
+        <item>Nanotechnology</item>
+        <item>Nonprofit Organization Management</item>
+        <item>Oil &amp; Energy</item>
+        <item>Other</item>
+        <item>Outsourcing/Offshoring</item>
+        <item>Performing Arts</item>
+        <item>Pharmaceuticals</item>
+        <item>Philanthropy</item>
+        <item>Photography</item>
+        <item>Political Organization</item>
+        <item>Professional Development</item>
+        <item>Public Relations and Communications</item>
+        <item>Publishing</item>
+        <item>Real Estate</item>
+        <item>Recreational Facilities and Services</item>
+        <item>Religious Institutions</item>
+        <item>Renewables &amp; Environment</item>
+        <item>Retail</item>
+        <item>Security and Investigations</item>
+        <item>Semiconductors</item>
+        <item>Sports</item>
+        <item>Staffing and Recruiting</item>
+        <item>Telecommunications</item>
+        <item>Textiles</item>
+        <item>Transportation/Trucking/Railroad</item>
+        <item>Venture Capital &amp; Private Equity</item>
+        <item>Veterinary</item>
+        <item>Warehousing</item>
+    </string-array>
+
+    <string-array name="interestArray">
+        <item>Gaming</item>
+        <item>Arts</item>
+        <item>Casual Dining</item>
+        <item>Coffee/Bookstores</item>
+        <item>Comedy</item>
+        <item>Concerts/Events</item>
+        <item>Fine Dining</item>
+        <item>Health/Fitness</item>
+        <item>Happy Hour</item>
+        <item>Outdoor Recreations</item>
+        <item>Politics</item>
+        <item>Hobbyist</item>
+        <item>Water Activities</item>
+        <item>Religious</item>
+        <item>Volunteering</item>
+        <item>Travel/Sightseeing</item>
+        <item>Sports</item>
+        <item>Shopping</item>
+        <item>Eclectic</item>
+        <item>Nightlife/Dancing</item>
+    </string-array>
 
 </resources>

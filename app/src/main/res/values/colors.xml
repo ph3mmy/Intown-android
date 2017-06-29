@@ -60,8 +60,9 @@
     <color name="blackTint">#99000000</color>
     <color name="sim_grey">#e5e5e5</color>
 
-    <color name="sim_grey">#E5E5E5</color>
     <color name="sim_grey_header">#303030</color>
     <color name="nav_drawer_black">#080808</color>
+    <color name="spinnerbackground">#111</color>
+    <color name="sim_grey_spinner">#222222</color>
 
 </resources>

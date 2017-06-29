@@ -4,7 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:ellipsize="none"
-    android:padding="6dp"
+    android:paddingEnd="-10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
     android:textSize="18sp"
     android:textColor="#c0c0c0"
-    android:background="@color/spinnerbackground"/>
+    android:background="@color/sim_grey_spinner"
+    android:paddingRight="-10dp"
+    android:paddingLeft="10dp" />
