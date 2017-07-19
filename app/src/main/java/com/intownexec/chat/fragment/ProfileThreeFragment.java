@@ -190,7 +190,6 @@ public class ProfileThreeFragment extends Fragment implements Constants, View.On
                 break;*/
             case R.id.addFirstProImageRemove:
                 selectedPostImg="";
-                selectedImage=null;
                 selectedImagePath="";
                 prevRemLayout.setVisibility(View.GONE);
                 addFirstImg.setVisibility(View.VISIBLE);

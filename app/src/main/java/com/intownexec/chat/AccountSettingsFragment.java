@@ -1118,7 +1118,7 @@ public class AccountSettingsFragment extends Fragment implements Constants {
                                     i.putExtra("worldView", worldView);
                                     i.putExtra("personalPriority", personalPriority);
                                     i.putExtra("importantInOthers", importantInOthers);
-                                    i.putExtra("viewsOnSmoking", viewsOnSmoking);
+                                     i.putExtra("viewsOnSmoking", viewsOnSmoking);
                                     i.putExtra("viewsOnAlcohol", viewsOnAlcohol);
                                     i.putExtra("youLooking", youLooking);
                                     i.putExtra("youLike", youLike);
